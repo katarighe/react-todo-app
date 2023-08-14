@@ -45,7 +45,7 @@ function ToDoList() {
 
   return (
     <div>
-      <h1>What tasks do you have on your to-do list for today?</h1>
+      <h1>What tasks do you have on your To Do list for today?</h1>
       <ToDoForm onSubmit={addTodo} clearTodo={clearTodo} />
       <ToDoCount todos={todos} />
       <ToDo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} />
