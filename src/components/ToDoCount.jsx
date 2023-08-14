@@ -5,9 +5,9 @@ function ToDoCount({ todos }) {
     <div className="to-do-count">
       There is
       {!todos.length
-        ? "no todo tasks that you need to complete."
+        ? " no todo tasks that you need to complete. "
         : todos.length === 1
-        ? "1 todo task that you need to complete."
+        ? " 1 todo task that you need to complete. "
         : todos.length > 1
         ? ` ${todos.length} todo tasks that you need to complete.`
         : null}
