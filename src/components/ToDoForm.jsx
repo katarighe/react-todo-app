@@ -36,7 +36,7 @@ function ToDoForm(props) {
         type="text"
         name="text"
         value={input}
-        placeholder="Add todo"
+        placeholder="Add To Do task here..."
         className="todo-input"
         onChange={(e) => setInput(e.target.value)}
         ref={inputRef}
