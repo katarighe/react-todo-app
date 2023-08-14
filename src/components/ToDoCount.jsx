@@ -2,7 +2,7 @@ import React from "react";
 
 function ToDoCount({ todos }) {
   return (
-    <div className="todo-count">
+    <div className="to-do-count">
       You have
       {!todos.length
         ? "no todo tasks available"
