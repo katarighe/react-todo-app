@@ -3,15 +3,14 @@
 * {
   margin: 0;
   padding: 0;
-  border-style: box;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   background: linear-gradient(
     90deg,
-    #ee82ee 0%,
-    #8a2be2 100%
+    #e03ce0 0%,
+    #8932db 100%
   );
 }
 
@@ -28,11 +27,12 @@ html {
   flex-direction: column;
   justify-content: start;
   min-height: 600px;
-  background: #ffc0cb;
+  background: #e750a3;
   text-align: center;
   margin: 128px auto;
   padding-bottom: 32px;
   width: 800px;
+  border: solid #000 10px;
 }
 
 h1 {
@@ -49,7 +49,7 @@ h1 {
 .to-do-count {
   display: flex;
   justify-content: center;
-  font-style: italic;
+  padding-bottom: 10px;
 }
 
 .to-do-form {
@@ -57,30 +57,31 @@ h1 {
 }
 
 .to-do-input {
-  padding: 16px 32px 16px 16px;
-  border-radius: 10px;
-  border: 2px solid #ff0000;
+  padding: 16px 36px 13px 12px;
+  border: 2px solid #000;
   outline: none;
   width: 500px;
   background: transparent;
+  background-color:#8932db;
+  opacity: 0.8;
 }
 
 .to-do-input::placeholder {
   font-family: "Open Sans", sans-serif;
   color: #000;
+  font-style: italic;
 }
 
 .add-button {
   margin-left: 5px;
-  padding: 12px;
+  padding: 15px;
   border: none;
   cursor: pointer;
-  border-radius: 10px;
   text-transform: capitalize;
   background: linear-gradient(
     90deg,
-    #5d0cff 0%,
-    rgba(75, 150, 300, 1.5) 100%
+    #8932db 30%,
+    rgba(75, 150, 300, 1.5) 90%
   );
 }
 
@@ -89,16 +90,15 @@ h1 {
 }
 
 .clear-button {
-  padding: 12px;
+  padding: 15px;
   margin-left: 5px;
-  border-radius: 10px;
   border: none;
   cursor: pointer;
   color: #fff;
   background: linear-gradient(
     90deg,
-    #5d0cff 0%,
-    rgba(75, 150, 300, 1.5) 100%
+    #8932db 30%,
+    rgba(75, 150, 300, 1.5) 90%
   );
 }
 
@@ -124,8 +124,8 @@ h1 {
   color: #fff;
   background: linear-gradient(
     90deg,
-    #ff7614 0%,
-    #ff5411 100%
+    #723408 0%,
+    #ee9b7a 100%
   );
 
   padding: 12px;
@@ -136,24 +136,24 @@ h1 {
 .to-do-row:nth-child(4n + 1) {
   background: linear-gradient(
     90deg,
-    #5d0cff 0%,
-    #9b00fa 100%
+    #401891 0%,
+    #ac85c4 100%
   );
 }
 
 .to-do-row:nth-child(4n + 2) {
   background: linear-gradient(
     90deg,
-    #ff0cf1 0%,
-    #fa0087 100%
+    #d158cb 0%,
+    #f13298 100%
   );
 }
 
 .to-do-row:nth-child(4n + 3) {
   background: linear-gradient(
     90deg,
-    #149fff 0%,
-    #117aff 100%
+    #2371a8 0%,
+    #7c9fcc 100%
   );
 }
 
