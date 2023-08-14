@@ -40,6 +40,7 @@ The app is open source and available on GitHub. Feel free to fork the project an
 * Javascript ES6
 * Visual Studio Code
 * ESLint
+* Stylelint
 
 <!-- Features -->
 
