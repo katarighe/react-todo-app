@@ -31,13 +31,13 @@ function ToDoForm(props) {
   };
 
   return (
-    <form className="todo-form" onSubmit={handleSubmit}>
+    <form className="to-do-form" onSubmit={handleSubmit}>
       <input
         type="text"
         name="text"
         value={input}
         placeholder="Add To Do task here..."
-        className="todo-input"
+        className="to-do-input"
         onChange={(e) => setInput(e.target.value)}
         ref={inputRef}
       />
