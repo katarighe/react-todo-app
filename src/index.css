@@ -7,11 +7,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(
-    90deg,
-    #e03ce0 0%,
-    #8932db 100%
-  );
+  background: linear-gradient(90deg, #e03ce0 0%, #8932db 100%);
 }
 
 html {
@@ -62,7 +58,7 @@ h1 {
   outline: none;
   width: 500px;
   background: transparent;
-  background-color:#8932db;
+  background-color: #8932db;
   opacity: 0.8;
 }
 
@@ -78,11 +74,7 @@ h1 {
   border: none;
   cursor: pointer;
   text-transform: capitalize;
-  background: linear-gradient(
-    90deg,
-    #8932db 30%,
-    rgba(75, 150, 300, 1.5) 90%
-  );
+  background: linear-gradient(90deg, #8932db 30%, rgba(75, 150, 300, 1.5) 90%);
 }
 
 .add-icon {
@@ -95,16 +87,12 @@ h1 {
   border: none;
   cursor: pointer;
   color: #fff;
-  background: linear-gradient(
-    90deg,
-    #8932db 30%,
-    rgba(75, 150, 300, 1.5) 90%
-  );
+  background: linear-gradient(90deg, #8932db 30%, rgba(75, 150, 300, 1.5) 90%);
 }
 
 .clear-icon {
   font-size: 15px;
-  color: var(#000);
+  color: #000;
 }
 
 .delete-icon {
@@ -122,39 +110,22 @@ h1 {
   align-items: center;
   margin: 4px auto;
   color: #fff;
-  background: linear-gradient(
-    90deg,
-    #723408 0%,
-    #ee9b7a 100%
-  );
-
+  background: linear-gradient(90deg, #723408 0%, #ee9b7a 100%);
   padding: 12px;
   border-radius: 5px;
   width: 90%;
 }
 
 .to-do-row:nth-child(4n + 1) {
-  background: linear-gradient(
-    90deg,
-    #401891 0%,
-    #ac85c4 100%
-  );
+  background: linear-gradient(90deg, #401891 0%, #ac85c4 100%);
 }
 
 .to-do-row:nth-child(4n + 2) {
-  background: linear-gradient(
-    90deg,
-    #d158cb 0%,
-    #f13298 100%
-  );
+  background: linear-gradient(90deg, #d158cb 0%, #f13298 100%);
 }
 
 .to-do-row:nth-child(4n + 3) {
-  background: linear-gradient(
-    90deg,
-    #2371a8 0%,
-    #7c9fcc 100%
-  );
+  background: linear-gradient(90deg, #2371a8 0%, #7c9fcc 100%);
 }
 
 /* For Mobile Only */
