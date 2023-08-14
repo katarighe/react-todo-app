@@ -3,13 +3,13 @@ import React from "react";
 function ToDoCount({ todos }) {
   return (
     <div className="to-do-count">
-      You have
+      There is
       {!todos.length
-        ? "no todo tasks available"
+        ? "no todo tasks that you need to complete"
         : todos.length === 1
-        ? "1 todo task available"
+        ? "1 todo task that you need to complete"
         : todos.length > 1
-        ? ` ${todos.length} todos available`
+        ? ` ${todos.length} todos that you need to complete`
         : null}
     </div>
   );
