@@ -7,8 +7,8 @@ function ToDoList() {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    if (localStorage.getItem("localTodos")) {
-      const storedList = JSON.parse(localStorage.getItem("localTodos"));
+    if (localStorage.getItem("localToDos")) {
+      const storedList = JSON.parse(localStorage.getItem("localToDos"));
       setTodos(storedList);
     }
   }, []);
@@ -17,7 +17,7 @@ function ToDoList() {
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
     }
-    localStorage.setItem("localTodos", JSON.stringify([todo, ...todos]));
+    localStorage.setItem("localToDos", JSON.stringify([todo, ...todos]));
     const newTodos = [todo, ...todos];
     setTodos(newTodos);
   };
@@ -35,12 +35,12 @@ function ToDoList() {
   const removeTodo = (id) => {
     const deleted = [...todos].filter((todo) => todo.id !== id);
     setTodos(deleted);
-    localStorage.setItem("localTodos", JSON.stringify(deleted));
+    localStorage.setItem("localToDos", JSON.stringify(deleted));
   };
 
   const clearTodo = () => {
     setTodos([]);
-    localStorage.removeItem("localTodos");
+    localStorage.removeItem("localToDos");
   };
 
   return (
