@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import ToDo from "./ToDo";
-import ToDoCount from "./ToDoCount";
-import ToDoForm from "./ToDoForm";
+import React, { useState, useEffect } from 'react';
+import ToDo from './ToDo';
+import ToDoCount from './ToDoCount';
+import ToDoForm from './ToDoForm';
 
 function ToDoList() {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    if (localStorage.getItem("localToDos")) {
-      const storedList = JSON.parse(localStorage.getItem("localToDos"));
+    if (localStorage.getItem('localToDos')) {
+      const storedList = JSON.parse(localStorage.getItem('localToDos'));
       setTodos(storedList);
     }
   }, []);
@@ -17,7 +17,7 @@ function ToDoList() {
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
     }
-    localStorage.setItem("localToDos", JSON.stringify([todo, ...todos]));
+    localStorage.setItem('localToDos', JSON.stringify([todo, ...todos]));
     const newTodos = [todo, ...todos];
     setTodos(newTodos);
   };
@@ -35,12 +35,12 @@ function ToDoList() {
   const removeTodo = (id) => {
     const deleted = [...todos].filter((todo) => todo.id !== id);
     setTodos(deleted);
-    localStorage.setItem("localToDos", JSON.stringify(deleted));
+    localStorage.setItem('localToDos', JSON.stringify(deleted));
   };
 
   const clearTodo = () => {
     setTodos([]);
-    localStorage.removeItem("localToDos");
+    localStorage.removeItem('localToDos');
   };
 
   return (
