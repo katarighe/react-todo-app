@@ -5,3 +5,17 @@
   padding: 0;
   border-style: box;
 }
+
+
+/* For Mobile Only */
+@media screen and (max-width: 400px) {
+  .to-do-app {
+    width: auto;
+    margin: 64px 32px auto 32px;
+    min-height: 500px;
+  }
+
+  .to-do-input {
+    width: auto;
+  }
+}
